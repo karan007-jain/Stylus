@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+<<<<<<< HEAD
 class ProductDetails extends StatefulWidget {
   final String heading;
   final String url;
@@ -73,6 +74,26 @@ class _CurvedWebView extends StatelessWidget {
               initialUrl: url,
               javascriptMode: JavascriptMode.unrestricted,
             ),
+=======
+class ProductDetails extends StatelessWidget {
+  const ProductDetails({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: SizedBox(
+          height: 740,
+          width: double.infinity,
+          child: WebView(
+            debuggingEnabled: false,
+            backgroundColor: Colors.transparent,
+            initialUrl:
+                // 'https://dsign4you.com/3d/?design=33335&q=hq&showcompanylogo=false',
+              'https://youtube.com',
+            javascriptMode: JavascriptMode.unrestricted,
+>>>>>>> 798e8ae7f69aa128d4295041d5566701cc133afa
           ),
         ),
       ),
